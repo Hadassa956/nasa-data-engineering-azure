@@ -1,0 +1,18 @@
+# Cache do Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Configurações do Databricks e Notebooks
+.databricks/
+.ipynb_checkpoints/
+
+# Arquivos de ambiente e senhas locais
+.env
+.venv
+
+# Ignorar arquivos de dados locais (Boas Práticas de Dados)
+*.csv
+*.parquet
+*.json
+*.txt
