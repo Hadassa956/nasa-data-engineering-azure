@@ -10,9 +10,9 @@ An end-to-end Data Engineering pipeline built to extract, transform, and serve N
 
 ## Architecture & Data Flow
 The data pipeline is divided into three logical layers within Azure Data Lake Storage Gen2:
-* **🥉 Bronze Layer:** Ingestion of raw data (nested JSON) directly from the NASA API, stored in Parquet format for read optimization.
-* **🥈 Silver Layer:** Data cleansing, structure flattening, and addition of audit metadata (e.g., `silver_processing_date`).
-* **🥇 Gold Layer:** Business logic application. The data was filtered and refined to deliver a final table containing only asteroids classified by NASA as a real threat (`is_potentially_hazardous_asteroid == True`).
+* **Bronze Layer:** Ingestion of raw data (nested JSON) directly from the NASA API, stored in Parquet format for read optimization.
+* **Silver Layer:** Data cleansing, structure flattening, and addition of audit metadata (e.g., `silver_processing_date`).
+* **Gold Layer:** Business logic application. The data was filtered and refined to deliver a final table containing only asteroids classified by NASA as a real threat (`is_potentially_hazardous_asteroid == True`).
 
 ## Technologies & Tools
 * **Languages:** Python, PySpark
@@ -34,9 +34,9 @@ Pipeline de Engenharia de Dados *end-to-end* construído para extrair, transform
 
 ## Arquitetura e Fluxo de Dados
 O fluxo de dados foi dividido em três camadas lógicas dentro do Azure Data Lake Storage Gen2:
-* **🥉 Camada Bronze:** Ingestão dos dados brutos (JSON aninhado) a partir da API da NASA, guardados no formato Parquet para otimização de leitura.
-* **🥈 Camada Silver:** Limpeza dos dados, planificação (*flattening*) de estruturas complexas e adição de metadados de auditoria (ex: `data_processamento_silver`).
-* **🥇 Camada Gold:** Aplicação de regras de negócio. Os dados foram filtrados e refinados para entregar uma tabela final contendo apenas os asteroides classificados pela NASA como uma ameaça real (`is_potentially_hazardous_asteroid == True`).
+* **Camada Bronze:** Ingestão dos dados brutos (JSON aninhado) a partir da API da NASA, guardados no formato Parquet para otimização de leitura.
+* **Camada Silver:** Limpeza dos dados, planificação (*flattening*) de estruturas complexas e adição de metadados de auditoria (ex: `data_processamento_silver`).
+* **Camada Gold:** Aplicação de regras de negócio. Os dados foram filtrados e refinados para entregar uma tabela final contendo apenas os asteroides classificados pela NASA como uma ameaça real (`is_potentially_hazardous_asteroid == True`).
 
 ## Tecnologias e Ferramentas Utilizadas
 * **Linguagens:** Python, PySpark
